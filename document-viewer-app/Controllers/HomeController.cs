@@ -13,9 +13,12 @@ namespace document_viewer_app.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(string nombreArchivo = "")
         {
-            return View();
+            string urlCompleta = $"https://bconnectstoragetest.blob.core.windows.net/temp/{nombreArchivo}";
+            var report = new TestReport(urlCompleta);
+
+            return View(report); // Pasar el objeto TestReport creado como modelo de la vista
         }
 
         public IActionResult Privacy()

@@ -29,8 +29,16 @@ namespace document_viewer_app
         /// the contents of this method with the code editor.
         /// </summary>
 
+        private readonly string _pdfUrl;
 
-        private void InitializeComponent(string nombreArchivo = "")
+        public TestReport(string pdfUrl)
+        {
+            InitializeComponent();
+            _pdfUrl = pdfUrl;
+            xrPdfContent1.SourceUrl = _pdfUrl;
+        }
+
+        private void InitializeComponent()
         {
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
             this.xrPdfContent1 = new DevExpress.XtraReports.UI.XRPdfContent();
@@ -51,7 +59,6 @@ namespace document_viewer_app
             this.xrPdfContent1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 39.54166F);
             this.xrPdfContent1.Name = "xrPdfContent1";
             this.xrPdfContent1.SizeF = new System.Drawing.SizeF(650F, 23F);
-            this.xrPdfContent1.SourceUrl = "https://bconnectstoragetest.blob.core.windows.net/temp/" + nombreArchivo;
             // TopMargin
             // 
             this.TopMargin.Name = "TopMargin";
