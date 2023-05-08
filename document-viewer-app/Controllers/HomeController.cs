@@ -13,7 +13,7 @@ namespace document_viewer_app.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index(string nombreArchivo = "")
+        public IActionResult Reporting(string nombreArchivo = "dotnet_core_tutorial.pdf")
         {
             string urlCompleta = $"https://bconnectstoragetest.blob.core.windows.net/temp/{nombreArchivo}";
             var report = new TestReport(urlCompleta);
