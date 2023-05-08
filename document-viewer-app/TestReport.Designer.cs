@@ -9,8 +9,6 @@ namespace document_viewer_app
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        public string NombreArchivo { get; set; } = "dotnet_core_tutorial.pdf";
-
         /// <summary> 
         /// Clean up any resources being used.
         /// </summary>
