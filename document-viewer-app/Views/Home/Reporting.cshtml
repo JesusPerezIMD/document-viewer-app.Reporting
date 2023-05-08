@@ -1,6 +1,10 @@
 ﻿@model TestReport // Declarar el modelo de la vista
 
+@{
+    ViewData["Title"] = "Reporting";
+}
+
 <link rel="stylesheet" href="~/css/viewer.part.bundle.css" />
 <script src="~/js/viewer.part.bundle.js"></script>
 
-@Html.DevExpress().WebDocumentViewer("DocumentViewer").Height("1000px").Bind(Model) // Pasar el objeto TestReport como parámetro del método Bind
+@Html.DevExpress().WebDocumentViewer("DocumentViewer").Height("1000px").Bind(Model)
