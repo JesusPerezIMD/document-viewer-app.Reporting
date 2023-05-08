@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
+            this.xrPdfContent1 = new DevExpress.XtraReports.UI.XRPdfContent();
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
-            this.xrPdfContent1 = new DevExpress.XtraReports.UI.XRPdfContent();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // Detail
@@ -41,6 +41,13 @@
             this.Detail.Name = "Detail";
             this.Detail.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
             this.Detail.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
+            // 
+            // xrPdfContent1
+            // 
+            this.xrPdfContent1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 39.54166F);
+            this.xrPdfContent1.Name = "xrPdfContent1";
+            this.xrPdfContent1.SizeF = new System.Drawing.SizeF(650F, 23F);
+            this.xrPdfContent1.SourceUrl = "https://bconnectstoragetest.blob.core.windows.net/temp/dotnet_core_tutorial.pdf";
             // 
             // TopMargin
             // 
@@ -53,14 +60,6 @@
             this.BottomMargin.Name = "BottomMargin";
             this.BottomMargin.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
             this.BottomMargin.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            // 
-            // xrPdfContent1
-            // 
-            this.xrPdfContent1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 39.54166F);
-            this.xrPdfContent1.Name = "xrPdfContent1";
-            this.xrPdfContent1.SizeF = new System.Drawing.SizeF(650F, 23F);
-            this.xrPdfContent1.SourceUrl = "http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/ElPrincipito" +
-    ".pdf";
             // 
             // TestReport
             // 
